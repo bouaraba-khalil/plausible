@@ -95,7 +95,7 @@ services:
       - LETSENCRYPT_EMAIL=mail@khalil.ink
     networks:
       - plausible
-      - nginx-proxy
+      - default
 
 volumes:
   db-data:
