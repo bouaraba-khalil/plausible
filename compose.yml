@@ -61,7 +61,7 @@ services:
       - DISABLE_REGISTRATION
       - ENABLE_EMAIL_VERIFICATION
       # web: https://github.com/plausible/community-edition/wiki/configuration#web
-      - HTTP_PORT
+      - HTTP_PORT=${HTTP_PORT}
       - HTTPS_PORT
       # databases: https://github.com/plausible/community-edition/wiki/configuration#database
       - DATABASE_URL
@@ -89,9 +89,9 @@ services:
       - MAILGUN_BASE_URI
       - MANDRILL_API_KEY
       - SENDGRID_API_KEY
-      - VIRTUAL_HOST=daily.khalil.ink
-      - VIRTUAL_PORT=3000
-      - LETSENCRYPT_HOST=daily.khalil.ink
+      - VIRTUAL_HOST=plausible.khalil.ink
+      - VIRTUAL_PORT=6000
+      - LETSENCRYPT_HOST=plausible.khalil.ink
       - LETSENCRYPT_EMAIL=mail@khalil.ink
     networks:
       - plausible
